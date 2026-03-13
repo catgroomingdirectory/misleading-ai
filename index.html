@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>misleading.ai — AI Truth Engine</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="particleCanvas"></canvas>
+
+<div class="content">
+
+<nav>
+  <div class="logo">
+    <div class="logo-dot"></div>
+    MISLEADING.AI
+  </div>
+  <div class="nav-status">
+    <div class="status-light"></div>
+    System Online
+  </div>
+  <a href="#acquire" class="nav-btn">Acquire Domain</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">
+    <span class="eyebrow-line"></span>
+    AI Truth Infrastructure — Domain For Acquisition
+    <span class="eyebrow-line r"></span>
+  </div>
+  <div class="glitch-wrap">
+    <h1 class="hero-title">
+      <span class="t-cyan">MIS</span><span class="t-blue">LEA</span><span class="t-pink">DIN</span><span class="t-cyan">G</span>
+    </h1>
+    <div class="glitch-layer">MISLEADING</div>
+    <div class="glitch-layer l2">MISLEADING</div>
+    <span class="hero-ai-tag">. A I</span>
+  </div>
+  <p class="hero-sub">
+    The category-defining domain for AI fact-checking, deepfake detection, and misinformation intelligence — in the #1 global risk space of 2026.
+  </p>
+  <div class="scanner-wrap">
+    <div class="scanner-frame">
+      <div class="frame-corner-tr"></div>
+      <div class="frame-corner-bl"></div>
+      <div class="scanner-inner">
+        <div class="scanner-header">
+          <div class="scanner-title">// misleading.ai — truth engine v2.6</div>
+          <div class="scanner-indicators">
+            <div class="ind ind1"></div>
+            <div class="ind ind2"></div>
+            <div class="ind ind3"></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <input class="scan-input" id="claimInput" type="text" placeholder="Enter any claim to scan for misinformation..." />
+          <button class="scan-btn" id="scanBtn">SCAN</button>
+          <div class="scan-line" id="scanLine"></div>
+        </div>
+        <div class="result-panel" id="resultPanel">
+          <div class="result-bar-bg"><div class="result-bar-fill" id="resultBar"></div></div>
+          <div class="result-main">
+            <div class="verdict-icon" id="vIcon">?</div>
+            <div class="verdict-info">
+              <div class="verdict-label" id="vLabel">—</div>
+              <div class="verdict-conf" id="vConf">—</div>
+              <div class="verdict-chips" id="vChips"></div>
+            </div>
+          </div>
+        </div>
+        <div class="presets">
+          <button class="pre-btn" data-c="This AI image is 100% real and unedited">AI image</button>
+          <button class="pre-btn" data-c="Our model never hallucinates or fabricates facts">Hallucination</button>
+          <button class="pre-btn" data-c="Studies show this supplement cures anxiety disorders">Health claim</button>
+          <button class="pre-btn" data-c="This story was verified by peer-reviewed sources">News accuracy</button>
+          <button class="pre-btn" data-c="This video has not been altered in any way">Deepfake</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-arrow"></div>
+    <div class="scroll-text">Scroll</div>
+  </div>
+</section>
+
+<div class="stats-section">
+  <div class="stat-block reveal">
+    <span class="stat-number c1">8M</span>
+    <div class="stat-label">Deepfake videos<br>projected by 2026</div>
+  </div>
+  <div class="stat-block reveal" style="transition-delay:0.15s">
+    <span class="stat-number c2">#1</span>
+    <div class="stat-label">WEF global risk<br>two years running</div>
+  </div>
+  <div class="stat-block reveal" style="transition-delay:0.3s">
+    <span class="stat-number c3">40%</span>
+    <div class="stat-label">High-value fraud<br>uses AI-generated content</div>
+  </div>
+</div>
+
+<section class="features-section">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">Use cases</span>
+      <h2 class="section-title">Six figures of<br>product potential.</h2>
+    </div>
+    <div class="section-count">06</div>
+  </div>
+  <div class="bento">
+    <div class="bento-card bc1 bc-span3 bento-big reveal">
+      <div class="bento-big-content">
+        <div class="bento-tag">Core Product</div>
+        <div class="bento-title">Hallucination Detection Engine</div>
+        <p class="bento-body">Real-time LLM output monitoring that catches AI confabulation before it reaches end users. The enterprise compliance product every AI vendor desperately needs — and will pay for.</p>
+      </div>
+      <div class="bento-visual">
+        <div class="ring-visual">
+          <div class="ring ring1"></div>
+          <div class="ring ring2"></div>
+          <div class="ring ring3"></div>
+          <div class="ring-center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bento-card bc2 bc-span3 reveal" style="transition-delay:0.1s">
+      <div class="bento-tag">Media</div>
+      <div class="bento-title">Fact-Check Platform</div>
+      <p class="bento-body">AI-powered claim verification for journalists, publishers, and platforms fighting the deepfake epidemic at scale. Browser extension or standalone SaaS.</p>
+    </div>
+    <div class="bento-card bc3 bc-span2 reveal" style="transition-delay:0.1s">
+      <div class="bento-tag">Enterprise</div>
+      <div class="bento-title">Media Trust Score</div>
+      <p class="bento-body">Credibility grading for news, social posts, and AI content in real time.</p>
+    </div>
+    <div class="bento-card bc4 bc-span2 reveal" style="transition-delay:0.2s">
+      <div class="bento-tag">Gov / Regulation</div>
+      <div class="bento-title">Compliance Tool</div>
+      <p class="bento-body">EU AI Act compliance, election integrity, and government-contracted disinformation monitoring.</p>
+    </div>
+    <div class="bento-card bc5 bc-span2 reveal" style="transition-delay:0.3s">
+      <div class="bento-tag">Education</div>
+      <div class="bento-title">Media Literacy</div>
+      <p class="bento-body">Teaching students and professionals to identify AI-generated misinformation at scale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="buyers-section">
+  <span class="section-eyebrow">Ideal acquirers</span>
+  <h2 class="section-title" style="margin-bottom:40px;">Who writes<br>the check.</h2>
+  <div class="buyers-grid">
+    <div class="buyer-card reveal">
+      <div class="buyer-num">01</div>
+      <div>
+        <div class="buyer-name">Fact-Checking Organizations</div>
+        <div class="buyer-body">Full Fact, NewsGuard, PolitiFact — scaling AI-powered verification globally. misleading.ai owns the category name they've been building toward.</div>
+      </div>
+    </div>
+    <div class="buyer-card reveal" style="transition-delay:0.1s">
+      <div class="buyer-num">02</div>
+      <div>
+        <div class="buyer-name">Cybersecurity Firms</div>
+        <div class="buyer-body">Companies expanding into AI fraud detection, deepfake forensics, and synthetic media identification services for enterprise clients.</div>
+      </div>
+    </div>
+    <div class="buyer-card reveal" style="transition-delay:0.1s">
+      <div class="buyer-num">03</div>
+      <div>
+        <div class="buyer-name">Enterprise AI Vendors</div>
+        <div class="buyer-body">LLM providers needing a hallucination monitoring product to satisfy enterprise compliance. This domain is the brand they'd build it under.</div>
+      </div>
+    </div>
+    <div class="buyer-card reveal" style="transition-delay:0.2s">
+      <div class="buyer-num">04</div>
+      <div>
+        <div class="buyer-name">Media &amp; News Platforms</div>
+        <div class="buyer-body">Publishers building content integrity tools to survive — and profit from — the AI misinformation crisis that's reshaping trust in media.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="acquire-section" id="acquire">
+  <div class="acquire-frame">
+    <div class="corner c-tl"></div>
+    <div class="corner c-tr"></div>
+    <div class="corner c-bl"></div>
+    <div class="corner c-br"></div>
+    <span class="acquire-tag">// Premium Domain — Available For Immediate Acquisition</span>
+    <div class="acquire-domain-display">
+      <div class="domain-text">
+        <span class="d-cyan">mis</span><span class="d-blue">lea</span><span class="d-cyan">din</span><span class="d-blue">g</span><span class="d-dot">.</span><span class="d-pink">ai</span>
+      </div>
+    </div>
+    <p class="acquire-sub">A single dictionary word. Perfectly positioned at the intersection of AI and truth. The name every serious player in this space will recognize immediately.</p>
+    <div class="price-display">
+      <span>$4,500</span>
+      <div class="price-sep"></div>
+      <span class="price-alt">ASKING PRICE</span>
+      <div class="price-sep"></div>
+      <span>$7,500</span>
+    </div>
+    <div class="cta-cluster">
+      <a href="#" class="cta-primary">View on Afternic</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>misleading.ai — premium domain available</span>
+  <span>&copy; 2026 — all rights reserved</span>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
