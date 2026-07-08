@@ -88,15 +88,52 @@ header {
   letter-spacing: -0.01em;
 }
 .brand-mark {
-  width: 26px; height: 26px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  position: relative;
+  width: 28px; height: 28px;
   display: grid;
   place-items: center;
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-size: 16px;
-  color: #06060a;
+  flex-shrink: 0;
+}
+.brand-mark .core {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 10px rgba(91, 140, 255, 0.7);
+  animation: core-pulse 2.8s ease-in-out infinite;
+}
+.brand-mark .orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+.brand-mark .orbit-1 {
+  inset: 0;
+  border-top-color: var(--accent);
+  border-right-color: rgba(91, 140, 255, 0.25);
+  animation: orbit-spin 3.2s linear infinite;
+}
+.brand-mark .orbit-1::after {
+  content: '';
+  position: absolute;
+  top: -3px; left: 50%;
+  width: 5px; height: 5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+.brand-mark .orbit-2 {
+  inset: 6px;
+  border-bottom-color: var(--accent-2);
+  border-left-color: rgba(56, 214, 240, 0.25);
+  animation: orbit-spin 2.1s linear infinite reverse;
+}
+@keyframes orbit-spin { to { transform: rotate(360deg); } }
+@keyframes core-pulse { 50% { transform: scale(1.4); opacity: 0.75; } }
+.brand:hover .orbit-1 { animation-duration: 1s; }
+.brand:hover .orbit-2 { animation-duration: 0.7s; }
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark .orbit-1, .brand-mark .orbit-2, .brand-mark .core { animation: none; }
 }
 .brand .tld { color: var(--muted); font-weight: 500; }
 .nav-links { display: flex; align-items: center; gap: 28px; }
