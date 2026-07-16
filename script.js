@@ -21,6 +21,54 @@ var obs = new IntersectionObserver(function (entries) {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
 
+// ── Header state + scroll progress ───────────────────────────────
+var header = document.querySelector('header');
+var progress = document.getElementById('scrollProgress');
+function onScroll() {
+  var y = window.pageYOffset || document.documentElement.scrollTop;
+  if (header) header.classList.toggle('scrolled', y > 12);
+  if (progress) {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  }
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// ── Cursor spotlight on cards & stats ────────────────────────────
+document.querySelectorAll('.card, .stat').forEach(function (el) {
+  el.addEventListener('pointermove', function (e) {
+    var r = el.getBoundingClientRect();
+    el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+    el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+});
+
+// ── Animated stat counters ───────────────────────────────────────
+var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var statObs = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (!e.isIntersecting) return;
+    statObs.unobserve(e.target);
+    var el = e.target;
+    var target = parseFloat(el.getAttribute('data-count'));
+    var prefix = el.getAttribute('data-prefix') || '';
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduceMotion || isNaN(target)) { return; }
+    var dur = 1400, start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(target * eased);
+      el.textContent = prefix + val + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat-num[data-count]').forEach(function (el) { statObs.observe(el); });
+
 // ── Truth engine demo (homepage only) ────────────────────────────
 var scanBtn = document.getElementById('scanBtn');
 if (scanBtn) {
