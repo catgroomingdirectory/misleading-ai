@@ -11,6 +11,8 @@
 <body>
 
 <div class="backdrop"></div>
+<div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <header>
   <nav class="nav">
@@ -28,6 +30,12 @@
 <main>
 
 <section class="hero wrap">
+  <div class="hero-mark" aria-hidden="true">
+    <span class="h-glow"></span>
+    <span class="h-ring h-ring-1"></span>
+    <span class="h-ring h-ring-2"></span>
+    <span class="h-core"></span>
+  </div>
   <div class="pill"><span class="dot"></span>Premium domain — available for acquisition</div>
   <h1 class="hero-title">The domain for the<br><span class="accent-word">truth layer</span> of AI</h1>
   <p class="hero-sub">
@@ -69,15 +77,15 @@
 <section class="wrap">
   <div class="stats">
     <div class="stat reveal">
-      <div class="stat-num">8M</div>
+      <div class="stat-num" data-count="8" data-suffix="M">8M</div>
       <div class="stat-label">Deepfake videos projected in circulation by end of 2026</div>
     </div>
     <div class="stat reveal" style="transition-delay:0.1s">
-      <div class="stat-num">#1</div>
+      <div class="stat-num" data-count="1" data-prefix="#">#1</div>
       <div class="stat-label">Misinformation ranked the top global risk by the WEF, two years running</div>
     </div>
     <div class="stat reveal" style="transition-delay:0.2s">
-      <div class="stat-num">40%</div>
+      <div class="stat-num" data-count="40" data-suffix="%">40%</div>
       <div class="stat-label">Of high-value fraud attempts now involve AI-generated content</div>
     </div>
   </div>
