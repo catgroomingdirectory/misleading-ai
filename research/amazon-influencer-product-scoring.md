@@ -321,12 +321,62 @@ account. The build-vs-buy math is not close.
 | Chrome extension reading pages you're browsing | Normal for this niche. You're a logged-in human viewing pages. |
 | Headless crawling Amazon at volume | Violates Conditions of Use + Associates Operating Agreement. IP blocks are near-certain; account action is possible. |
 | Same, **while authenticated as your influencer account** | Worst case. Directly attributable. Don't. |
+| Headless crawling **via a consumer VPN** | Strictly worse than doing nothing — see §7.1. VPN exits are flagged datacenter ranges, and TLS fingerprinting catches you before the IP is even considered. |
 | Proxy rotation + fingerprint spoofing vs. Amazon | Deliberate evasion. Not covered here. |
 
 Note: US case law on scraping *public* data (hiQ v. LinkedIn line) limits **CFAA** exposure
 but does **not** override a site's contractual terms or its right to terminate your account.
 For someone whose income depends on an Amazon account, the contract risk is the one that
 matters, not the criminal-statute risk.
+
+### 7.1 "Can't I just use a VPN?"
+
+Short answer: a VPN is the **weakest** option available. It addresses neither the thing that
+blocks you nor the thing that endangers the account. Four independent reasons:
+
+**1. IP is not the primary detection signal anymore.** Modern anti-bot stacks evaluate 100+
+signals per session, and the IP is not the first one checked. The **TLS handshake fires
+before any HTTP traffic** — JA3/JA4 fingerprinting reads your ClientHello (cipher ordering,
+extensions, curves) and can identify you as "Python requests" or "headless Chromium" *before
+you send a single header*, on any IP. Amazon's edge (CloudFront) checks JA4, alongside
+Cloudflare and Akamai. A proxy or VPN changes the source address and **forwards your TLS
+handshake unchanged** — the client fingerprint travels with you. You can be on the cleanest
+IP in the world and still be flagged on the handshake.
+
+**2. If IP *did* decide it, commercial VPN exits are the worst class of IP.** Datacenter
+ranges are catchable on ASN alone, and VPN exits are published in commercial IP-reputation
+feeds. They're often blocked *harder* than a plain cloud IP, because legitimate shoppers
+rarely browse Amazon through one. Worse, VPN exits are **shared** — you inherit the
+reputation of every other user on that node, and someone else has almost certainly already
+burned it.
+
+**3. Attribution to your account doesn't run through the IP at all.** If you're logged in,
+the session cookie identifies you regardless of exit node. Same if you reuse the browser
+profile, the device fingerprint, or if collected data visibly drives a storefront tied to
+your handle. Hiding the IP while carrying the same identity is theater.
+
+**4. The ToS violation is contractual and IP-independent.** A VPN changes the *probability
+of detection*, not the *compliance status*. And there's a bad-facts problem: circumventing a
+technical block after being blocked is the fact pattern that makes a scraping dispute worse,
+not better. Under the *hiQ* line, public-data scraping limits CFAA exposure — but nothing
+there stops Amazon from terminating an account for breaching its own terms.
+
+**Scale matters, and it's the honest distinction.** Opening a few dozen product pages by
+hand — VPN or not — is indistinguishable from shopping and nothing will happen. This section
+is about standing up an **automated pipeline at volume**, which is a different activity with
+a different detection profile and a different risk.
+
+**What would technically work, and why it still loses:** residential or mobile proxy pools
+(*not* VPNs) plus a fingerprint-patched browser build — rotating real consumer IPs so static
+blocklists go stale, with TLS/HTTP2 fingerprints matched to a real browser. That runs a few
+hundred dollars a month, needs ongoing maintenance as detection shifts (JA3 → JA4 already
+happened), and is unambiguous evasion.
+
+**Which brings it back to economics.** Of the nine criteria in §2, the *only* one that can't
+be licensed is video count — and Oink already extracts it for **~$30/month** by reading pages
+in your own browser, with no evasion, no proxy bill, and no account exposure. The scraping
+build is being contemplated to avoid a $30/month subscription while risking the account the
+entire business runs on. That trade doesn't clear.
 
 ---
 
@@ -381,3 +431,10 @@ matters, not the criminal-statute risk.
 - [Keepa pricing (2026) — The Front Desk Review](https://frontdeskreview.com/software/amazon-seller-tools/keepa/)
 - [Keepa Pricing and Plan: Is It Worth It? — RevenueGeeks](https://revenuegeeks.com/software/keepa/pricing)
 - [Rainforest API Alternatives (2026) — FlyByAPIs](https://flybyapis.com/blog/rainforest-api-alternatives/)
+- [How Anti-Bot Detection Works — Scrapfly](https://scrapfly.io/blog/posts/how-anti-bot-detection-works)
+- [JA3/JA4 TLS Fingerprinting: Detection and Evasion — Scrapfly](https://scrapfly.io/blog/posts/ja3-ja4-tls-fingerprinting-guide-to-detection-and-evasion)
+- [TLS fingerprinting in 2026: a complete guide for scrapers — DataResearchTools](https://dataresearchtools.com/tls-fingerprinting-scrapers-2026/)
+- [How Websites Detect Bots in 2026 — JA4 & HTTP/2 Fingerprinting — krowdev](https://krowdev.com/article/bot-detection-2026/)
+- [Headless Browser Detection: Signals, Methods, and What Works in 2026 — cside](https://cside.com/blog/headless-browser-detection)
+- [Browser Fingerprinting in 2026: Where Proxies Fall Short — TorchProxies](https://torchproxies.com/browser-fingerprinting-in-2026-what-platforms-actually-check-and-where-proxies-fall-short/)
+- [Detect Residential Proxies: Techniques — IPASIS](https://ipasis.com/blog/detecting-residential-proxies-techniques)
