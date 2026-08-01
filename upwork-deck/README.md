@@ -6,7 +6,7 @@ with AI** rather than listing services.
 - `deck.html` + `deck.css` + `mock.css` + `fonts.css` — the source
 - `shots/` — real screenshots of the live sites (captured from source, see below)
 - `Courtney_Delaney_Upwork_AI_Portfolio.pdf` — the export to upload to Upwork
-  (15 pages, 16:9, live site links clickable on pages 9–12)
+  (17 pages, 16:9, live site links clickable on pages 10–14)
 
 ## What changed and why
 
@@ -26,11 +26,13 @@ system mockups — and adds the missing argument.
 | 6 | Digital back office | Kept, rebuilt mockup |
 | 7 | Automation development | Kept, rebuilt mockup |
 | 8 | **Tools I build with** | **New** — the stack, also an Upwork keyword magnet |
-| 9–11 | Case studies | Kept, each with a **"Where AI came in"** note and a **real browser-framed screenshot** of the live site |
-| 12 | More live work | **Real screenshots** of Moontuck, Cautellus, and The Digital Back Office |
-| 13 | **Three ways to work together** | **New** — Audit / Build Sprint / Systems Partner |
-| 14 | **The questions worth asking** | **New** — data, failure modes, lock-in, jobs |
-| 15 | **Close** | **New** — 3-step next action instead of a soft sign-off |
+| 9 | **The pain, and the number that answers it** | **New** — four counted stats, each tied to a slide-2 pain point |
+| 10–12 | Case studies | Kept, each with a **"Where AI came in"** note and a **real browser-framed screenshot** of the live site |
+| 13 | **Newtown Men's Club** | **New** — the self-serve case study: the committee adds its own events and members |
+| 14 | More live work | **Real screenshots** of Moontuck, Cautellus, and The Digital Back Office |
+| 15 | **Three ways to work together** | **New** — Audit / Build Sprint / Systems Partner |
+| 16 | **The questions worth asking** | **New** — data, failure modes, lock-in, jobs |
+| 17 | **Close** | **New** — 3-step next action instead of a soft sign-off |
 
 ## About the screenshots
 
@@ -65,6 +67,20 @@ Two things worth calling out:
   as a gap — but if a client ever green-lights a redacted dashboard shot, those two
   slides are where it goes.
 
+## The stats on slide 9 — where each number comes from
+
+All four are countable, not estimated. Verify them yourself before you use them:
+
+| Number | What it counts | How to check |
+|---|---|---|
+| **530** | Published articles and guides across six sites | Content files in each repo: `content/posts/*.json` (American Puppy 49, Moontuck 23) and `content/**/*.md` (Cat Grooming Directory 175, Cautellus 213, Digital Back Office 58, Hold My Letter 12) |
+| **1,700+** | Groomer listings across all 50 states and Canada | The figure Cat Grooming Directory itself publishes on `/cat-grooming` |
+| **7** | Products live in production | American Puppy, Cat Grooming Directory, Hold My Letter, Newtown Men's Club, Moontuck, Cautellus, The Digital Back Office |
+| **0** | Developer tickets for routine updates | Newtown Men's Club — your claim, reflected as stated; see the note below |
+
+If any of these drift, recount before sending the deck. A number a client can
+falsify is worse than no number at all.
+
 ## Before you upload — three things to check
 
 1. **Slide 8, the tool list.** Written from what the deck and your live sites
@@ -73,14 +89,38 @@ Two things worth calling out:
 2. **Slides 9–11, "Where AI came in."** Written from what the original deck
    claimed plus what the sites suggest. Confirm each is true of how you actually
    built them, and reword any that aren't.
-3. **Slide 13, pricing.** Deliberately says "fixed fee" / "scoped per project"
+3. **Slide 15, pricing.** Deliberately says "fixed fee" / "scoped per project"
    with no numbers, so it's safe to upload as-is. Adding real starting prices
    will convert better once you're comfortable naming them.
+4. **Slide 13, Newtown Men's Club.** Written from what you described — a members
+   back office where the committee posts events and manages the roster
+   unaided. Confirm the four capabilities listed are what the dashboard actually
+   does, and that "0 support requests for routine updates" holds. **It has no
+   screenshot**: `newtownmensclub.com` is unreachable from the build environment
+   and there's no repo for it on the account, so the right-hand panel is a
+   capability list instead. Send a screenshot or add the repo and it drops
+   straight into the same browser frame the other case studies use.
 
 The one thing this deck still can't do is prove results. The screenshots prove the
 work exists and shipped; they don't prove it worked. If you can get even a single
 number or client sentence — traffic, bookings, hours saved, a testimonial — it belongs
 on the case-study slides, and it will outperform every design choice in here.
+
+### On the selling argument
+
+You asked me to double-check how the problem sells. The gap was that slide 2
+listed six symptoms of a *messy process* but never named the one that most often
+gets an owner to actually pay: being unable to change your own website. That's now
+the seventh pain point, it's the "0 developer tickets" stat on slide 9, and it's the
+whole point of the Newtown case study on slide 13. Slide 3 now says dashboards your
+team updates "without calling me" rather than dashboards that "keep everything in
+one place" — same feature, but stated as the outcome a buyer feels.
+
+Worth knowing: this argument cuts against selling a retainer. You are telling
+prospects they will need you less. That is the right trade — it's the strongest
+trust signal in the deck and it directly answers the "am I locked in?" objection on
+slide 16 — but price the Systems Partner tier on new work and monitoring, not on
+being the only person who can add an event.
 
 ### One bug spotted while capturing
 
