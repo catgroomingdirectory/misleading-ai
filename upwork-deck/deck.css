@@ -484,3 +484,14 @@ h2 {
   font-size: 46px; line-height: 1; color: var(--teal); flex: none;
 }
 .handoff-line .hl-t { font-size: 13.5px; line-height: 1.5; color: var(--body); font-weight: 300; }
+
+/* ---------- PDF export fixes ----------
+   Chrome's print-to-PDF encodes blurred box-shadows as transparency
+   soft-masks, which iOS Quick Look (and some other viewers) render as
+   solid dark rectangles over nearby content. page.pdf() uses print
+   media, so shadows are stripped here without affecting screen view. */
+@media print {
+  * { box-shadow: none !important; text-shadow: none !important; }
+  .laptop .lid { outline: 1px solid rgba(255,255,255,.10); }
+  .phone { outline: 1px solid rgba(255,255,255,.10); }
+}
