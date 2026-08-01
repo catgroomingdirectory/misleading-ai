@@ -6,7 +6,7 @@ with AI** rather than listing services.
 - `deck.html` + `deck.css` + `mock.css` + `fonts.css` — the source
 - `shots/` — real screenshots of the live sites (captured from source, see below)
 - `Courtney_Delaney_Upwork_AI_Portfolio.pdf` — the export to upload to Upwork
-  (18 pages, 16:9, live site links clickable on pages 10–14)
+  (19 pages, 16:9, live site links clickable on pages 12–16)
 
 ## What changed and why
 
@@ -18,22 +18,23 @@ system mockups — and adds the missing argument.
 
 | # | Slide | Status |
 |---|---|---|
-| 1 | Cover | Sharper subhead, and the laptop/phone now show **real screenshots** (Cautellus desktop, Moontuck mobile) |
-| 2 | **The real problem** | **New** — six owner-POV pain points before any pitch |
-| 3 | What I do | Kept, plus three differentiator cards |
-| 4 | How I work | Kept, added a 4th step: **Hand off** |
-| 5 | **Where AI actually pays off** | **New** — six concrete AI use cases |
-| 6 | Digital back office | Kept, rebuilt mockup |
-| 7 | Automation development | Kept, rebuilt mockup |
-| 8 | **Tools I build with** | **New** — the stack, framed as fit-over-familiarity: fix your tools or replace the bottleneck |
-| 9 | **The pain, and the number that answers it** | **New** — four counted stats, each tied to a slide-2 pain point |
-| 10–12 | Case studies | Kept, each with a **"Where AI came in"** note and a **real browser-framed screenshot** of the live site |
-| 13 | **Newtown Men's Club** | **New** — the self-serve case study: the committee adds its own events and members |
-| 14 | More live work | **Real screenshots** of Moontuck, Cautellus, and The Digital Back Office |
-| 15 | **Three ways to work together** | **New** — Audit / Build Sprint / Systems Partner, framed as selective |
-| 16 | **Not advice. A written assessment.** | **New** — previews the AI Tools Assessment deliverable (impact–effort matrix, quick wins, net-ROI math) |
-| 17 | **The questions worth asking** | **New** — data, failure modes, lock-in, jobs |
-| 18 | **Close** | **New** — 3-step next action instead of a soft sign-off |
+| 1 | Cover | Real screenshots (Cautellus desktop, Moontuck mobile); subhead addresses founders and established brands |
+| 2 | **What you walk away with — up front** | Outcome-first opener: four counted stats, each tied to a pain (per "start with the end") |
+| 3 | **Not advice. A written assessment.** | Previews the AI Tools Assessment deliverable (impact–effort matrix, quick wins, net-ROI math) |
+| 4 | The real problem | Seven owner-POV pain points, including "emailing your web guy" |
+| 5 | What I do | Plus three differentiator cards |
+| 6 | How I work | Four steps ending in Hand off |
+| 7 | Where AI actually pays off | Six concrete AI use cases |
+| 8 | **GEO** | **New** — AI-search visibility: llms.txt on five sites, structured data in 100+ templates, illustrative AI-answer mock |
+| 9 | Tools I build with | Fit-over-familiarity framing; leads with custom Next.js builds, includes GEO / structured data / llms.txt |
+| 10 | Digital back office | Illustrative system concept |
+| 11 | Automation development | Illustrative system concept |
+| 12–14 | Case studies | American Puppy, Cat Grooming Directory, Hold My Letter — real browser-framed screenshots |
+| 15 | Newtown Men's Club | Self-serve case study: the committee adds its own events and members |
+| 16 | More live work | Moontuck, Cautellus, The Digital Back Office |
+| 17 | Three ways to work together | Audit / Build Sprint / Systems Partner, framed as selective |
+| 18 | The questions worth asking | Data, failure modes, lock-in, jobs |
+| 19 | Close | Three-step next action |
 
 ## About the screenshots
 
@@ -136,6 +137,15 @@ upmarket signal; template pricing buyers don't get documents like that.
 The strongest premium lever is still price, which the deck deliberately leaves
 blank. When you fill in your Upwork rate, set it to filter out the buyers you're
 worried about — the deck now supports a premium number.
+
+### The GEO claims on slide 8 — where they come from
+
+Both are counted from your repos: `public/llms.txt` exists in cat-grooming-directory,
+cautellus, holdmyletter, moontuck, and the-digital-back-office (five of six sites —
+American Puppy is the exception, an easy add), and JSON-LD structured data appears in
+117 page templates across the six repos. The AI-answer panel is labelled
+"illustrative" — it shows the mechanism, not a logged conversation. Do not present it
+as a real citation unless you capture one.
 
 ### One bug spotted while capturing
 
