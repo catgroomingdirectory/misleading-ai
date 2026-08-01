@@ -495,3 +495,38 @@ h2 {
   .laptop .lid { outline: 1px solid rgba(255,255,255,.10); }
   .phone { outline: 1px solid rgba(255,255,255,.10); }
 }
+
+/* ---------- Audit deliverable preview ---------- */
+.report {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(165deg, rgba(255,255,255,.055), rgba(255,255,255,.015));
+  padding: 24px 26px 20px;
+}
+.rp-head { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 18px; }
+.rp-kicker { font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+.rp-title { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: var(--cream); }
+.rp-badge {
+  font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid rgba(229,185,78,.45); border-radius: 4px;
+  padding: 5px 10px; background: rgba(229,185,78,.06); flex: none;
+}
+.rp-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 16px; }
+.rp-cell {
+  border: 1px solid var(--line); border-radius: 10px;
+  background: rgba(255,255,255,.03); padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 3px; min-height: 74px;
+}
+.rp-cell.win { border-color: rgba(45,212,191,.45); background: rgba(45,212,191,.08); }
+.rp-cell.ignore { opacity: .55; }
+.rp-cell-t { font-size: 14px; color: var(--cream); font-weight: 500; }
+.rp-cell.win .rp-cell-t { color: var(--teal); }
+.rp-cell-s { font-size: 11px; color: var(--muted); font-weight: 300; }
+.rp-dots { display: flex; gap: 5px; margin-top: 7px; }
+.rp-dots i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.22); }
+.rp-cell.win .rp-dots i { background: var(--teal); }
+.rp-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-bottom: 16px; }
+.rp-stat { border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.03); padding: 11px 13px; }
+.rp-sl { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.rp-sv { font-family: 'Playfair Display', Georgia, serif; font-size: 22px; line-height: 1; }
+.rp-foot { font-size: 10.5px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 12px; }

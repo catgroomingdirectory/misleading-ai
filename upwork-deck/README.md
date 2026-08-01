@@ -6,7 +6,7 @@ with AI** rather than listing services.
 - `deck.html` + `deck.css` + `mock.css` + `fonts.css` — the source
 - `shots/` — real screenshots of the live sites (captured from source, see below)
 - `Courtney_Delaney_Upwork_AI_Portfolio.pdf` — the export to upload to Upwork
-  (17 pages, 16:9, live site links clickable on pages 10–14)
+  (18 pages, 16:9, live site links clickable on pages 10–14)
 
 ## What changed and why
 
@@ -30,9 +30,10 @@ system mockups — and adds the missing argument.
 | 10–12 | Case studies | Kept, each with a **"Where AI came in"** note and a **real browser-framed screenshot** of the live site |
 | 13 | **Newtown Men's Club** | **New** — the self-serve case study: the committee adds its own events and members |
 | 14 | More live work | **Real screenshots** of Moontuck, Cautellus, and The Digital Back Office |
-| 15 | **Three ways to work together** | **New** — Audit / Build Sprint / Systems Partner |
-| 16 | **The questions worth asking** | **New** — data, failure modes, lock-in, jobs |
-| 17 | **Close** | **New** — 3-step next action instead of a soft sign-off |
+| 15 | **Three ways to work together** | **New** — Audit / Build Sprint / Systems Partner, framed as selective |
+| 16 | **Not advice. A written assessment.** | **New** — previews the AI Tools Assessment deliverable (impact–effort matrix, quick wins, net-ROI math) |
+| 17 | **The questions worth asking** | **New** — data, failure modes, lock-in, jobs |
+| 18 | **Close** | **New** — 3-step next action instead of a soft sign-off |
 
 ## About the screenshots
 
@@ -121,6 +122,20 @@ prospects they will need you less. That is the right trade — it's the stronges
 trust signal in the deck and it directly answers the "am I locked in?" objection on
 slide 16 — but price the Systems Partner tier on new work and monitoring, not on
 being the only person who can add an event.
+
+### Positioning upmarket
+
+Per your note about not getting stuck in cheap WordPress work: the cover now says
+"founders and established brands" instead of "small business owners," WordPress is
+gone from the tool list (the web row leads with "Custom Next.js builds," which is
+what your portfolio actually demonstrates), and the packages slide says you take a
+small number of engagements at a time instead of "most clients start small." Slide 16
+previews the AI Tools Assessment deliverable — a branded written report is itself an
+upmarket signal; template pricing buyers don't get documents like that.
+
+The strongest premium lever is still price, which the deck deliberately leaves
+blank. When you fill in your Upwork rate, set it to filter out the buyers you're
+worried about — the deck now supports a premium number.
 
 ### One bug spotted while capturing
 
