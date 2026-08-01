@@ -102,6 +102,67 @@ A better competitive-intel target than one person's storefront: for any ASIN you
 considering, look at *who* has videos on it and whether they're brand-produced or
 influencer-produced. Oink surfaces exactly this split (see §3).
 
+#### 1.2.1 How Viral Vue got built — and why it's the more interesting story
+
+**Sourcing caveat:** Niche Pursuits, chrome-stats, and viralvue.com all returned 403 to
+automated fetch. The below is assembled from search snippets and podcast descriptions, not
+primary reads. Earnings figures are **self-reported and promotional** — treat as marketing.
+
+**Timeline:**
+
+| When | What |
+| --- | --- |
+| Pre-2022 | Childhood side hustles (lawn mowing, a poop-scooping business), then Amazon FBA private label. Grew into a reported 7–8-figure seller; ran **AMZ Champions**, a coaching/course brand. |
+| **Late 2022** | **The origin moment.** As a *seller*, he noticed influencer videos appearing on his own listings with no explanation of where they came from. Researched who these people were and how they were paid. |
+| Shortly after | Joined as an influencer. Reported **$3,000 in month one.** |
+| 2023–24 | Family scaled to a reported **~10,000 videos**; figures cited include $10k/mo from Amazon Influencer and a $39k month on TikTok. |
+| ~late 2023 / early 2024 | Viral Vue launched. Earliest tracked extension versions are **April 2024** (1.2.3 → 1.3.0), so public launch was at or slightly before that. |
+| Sept 2025 | v1.7.9.0 — still actively developed. |
+| Now | **Co-Founder and CEO**, Viral Vue, Lehi UT. |
+
+**The four things that actually made it work:**
+
+1. **He came at it from the seller side first.** This is the whole advantage. He watched
+   influencer videos land on listings *he owned* — meaning he saw what those videos did to
+   conversion before he knew what they paid the creator. Nobody entering as a creator gets
+   that view. He was arbitraging an information gap between two sides of the same market.
+2. **He built it for himself, at a scale that created the problem.** Viral Vue started as an
+   internal tool for his own family's operation. At ~10,000 videos, manually tracking Creator
+   Connections campaigns and researching products stops being tedious and becomes impossible.
+   The tool is an answer to a bottleneck **only very high-volume creators ever hit** — which
+   is why it found product-market fit immediately: he was the user, and the pain was real.
+3. **Distribution was already paid for.** ~500k followers, an established YouTube channel,
+   and the AMZ Champions coaching audience — all built during the FBA years, *before* the
+   tool existed. He never had to solve customer acquisition, the hardest part of launching
+   SaaS. **This is the part that isn't reproducible on demand**, and the part his content
+   understandably doesn't dwell on.
+4. **He didn't build it alone.** He's listed as **Co-Founder** and CEO, not sole founder.
+   No evidence he wrote the code; the pattern is a domain expert pairing with technical
+   co-founders. ⚠️ I could not confirm who the other founder(s) are.
+
+**Business model:** Chrome extension — cheap distribution via the Web Store, minimal infra.
+Free tier / **Starter $39/mo** ($390/yr) / **Pro $79/mo** ($66/mo annual, $790/yr). ~4.5
+stars; praise for CC automation and time savings, recurring complaints about glitches after
+updates.
+
+**Why this matters for your own strategy — the picks-and-shovels read:**
+
+He was a top-1% practitioner *first*, then sold tooling to the market he'd mastered. Note
+the direction: the influencer business generated the credibility, the audience, and the
+problem definition; the software monetized all three at much better margins and far more
+stable revenue than commissions. Content now drives tool subscriptions and tool usage
+generates content — vertically integrated.
+
+Two takeaways:
+
+- **Discount his tool recommendations accordingly.** When his content recommends Viral Vue,
+  that's his own product. Not disqualifying — he genuinely knows the space — but it's vendor
+  content, not neutral review. Weigh Oink on the merits (§3).
+- **The transferable lesson isn't which products he filmed.** It's that the durable business
+  was *adjacent* to the influencer work, not the influencer work itself. Commission income is
+  volatile and rate-controlled by Amazon; subscription income isn't. Worth holding in mind
+  before optimizing hard for a 1.5% commission-rate difference.
+
 ### 1.3 "Can we search for products for these rankings?"
 
 Yes, but **not from a single source.** Nine criteria, four different data origins. See §2.
@@ -438,3 +499,11 @@ entire business runs on. That trade doesn't clear.
 - [Headless Browser Detection: Signals, Methods, and What Works in 2026 — cside](https://cside.com/blog/headless-browser-detection)
 - [Browser Fingerprinting in 2026: Where Proxies Fall Short — TorchProxies](https://torchproxies.com/browser-fingerprinting-in-2026-what-platforms-actually-check-and-where-proxies-fall-short/)
 - [Detect Residential Proxies: Techniques — IPASIS](https://ipasis.com/blog/detecting-residential-proxies-techniques)
+- [From Side Hustles to 8 Figures: Trevin Peterson on Amazon & Viral Vue (Part 1) — The Social Circle](https://open.spotify.com/episode/7gYpQRx8gbqEeIA64elF1C)
+- [How Trevin Peterson Turned Rejection into Almost $40K/month — Niche Pursuits Podcast](https://nichepursuits.libsyn.com/how-trevin-peterson-turned-rejection-into-almost-40kmonth)
+- [Trevin Peterson — LinkedIn](https://www.linkedin.com/in/trevinpeterson/)
+- [Trevin Peterson, Viral Vue Co-Founder and CEO — RocketReach](https://rocketreach.co/trevin-peterson-email_121064187)
+- [Viral Vue: Amazon Influencers & Associates — chrome-stats](https://chrome-stats.com/d/pakblppeciifkjmkfleeeomhmfiikaej)
+- [Viral Vue Pricing: Plans and Features — Viral Vue support](https://support.viralvue.com/hc/en-us/articles/43801104257427-Viral-Vue-Pricing-Plans-and-Features)
+- [Viral Vue Review – Do Amazon Influencers Actually Need It? — EntreResource](https://entreresource.com/viral-vue-review/)
+- [7 Figure Amazon FBA Seller - Trevin Peterson — Collabs](https://www.collabs.io/mag/trevin-peterson/)
