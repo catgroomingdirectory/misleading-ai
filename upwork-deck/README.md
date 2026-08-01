@@ -25,7 +25,7 @@ system mockups — and adds the missing argument.
 | 5 | **Where AI actually pays off** | **New** — six concrete AI use cases |
 | 6 | Digital back office | Kept, rebuilt mockup |
 | 7 | Automation development | Kept, rebuilt mockup |
-| 8 | **Tools I build with** | **New** — the stack, also an Upwork keyword magnet |
+| 8 | **Tools I build with** | **New** — the stack, framed as fit-over-familiarity: fix your tools or replace the bottleneck |
 | 9 | **The pain, and the number that answers it** | **New** — four counted stats, each tied to a slide-2 pain point |
 | 10–12 | Case studies | Kept, each with a **"Where AI came in"** note and a **real browser-framed screenshot** of the live site |
 | 13 | **Newtown Men's Club** | **New** — the self-serve case study: the committee adds its own events and members |
