@@ -76,7 +76,7 @@ All four are countable, not estimated. Verify them yourself before you use them:
 | **530** | Published articles and guides across six sites | Content files in each repo: `content/posts/*.json` (American Puppy 49, Moontuck 23) and `content/**/*.md` (Cat Grooming Directory 175, Cautellus 213, Digital Back Office 58, Hold My Letter 12) |
 | **1,700+** | Groomer listings across all 50 states and Canada | The figure Cat Grooming Directory itself publishes on `/cat-grooming` |
 | **7** | Products live in production | American Puppy, Cat Grooming Directory, Hold My Letter, Newtown Men's Club, Moontuck, Cautellus, The Digital Back Office |
-| **0** | Developer tickets for routine updates | Newtown Men's Club — your claim, reflected as stated; see the note below |
+| **6** | Distinct industries shipped | Local service (American Puppy), directory (Cat Grooming Directory), DTC (Hold My Letter), subscription (Moontuck), SaaS (Cautellus), membership org (Newtown Men's Club) |
 
 If any of these drift, recount before sending the deck. A number a client can
 falsify is worse than no number at all.
@@ -95,7 +95,7 @@ falsify is worse than no number at all.
 4. **Slide 13, Newtown Men's Club.** Written from what you described — a members
    back office where the committee posts events and manages the roster
    unaided. Confirm the four capabilities listed are what the dashboard actually
-   does, and that "0 support requests for routine updates" holds. **It has no
+   does. **It has no
    screenshot**: `newtownmensclub.com` is unreachable from the build environment
    and there's no repo for it on the account, so the right-hand panel is a
    capability list instead. Send a screenshot or add the repo and it drops
@@ -111,8 +111,8 @@ on the case-study slides, and it will outperform every design choice in here.
 You asked me to double-check how the problem sells. The gap was that slide 2
 listed six symptoms of a *messy process* but never named the one that most often
 gets an owner to actually pay: being unable to change your own website. That's now
-the seventh pain point, it's the "0 developer tickets" stat on slide 9, and it's the
-whole point of the Newtown case study on slide 13. Slide 3 now says dashboards your
+the seventh pain point, and it's the whole point of the Newtown case study on
+slide 13. Slide 3 now says dashboards your
 team updates "without calling me" rather than dashboards that "keep everything in
 one place" — same feature, but stated as the outcome a buyer feels.
 
