@@ -29,7 +29,7 @@ system mockups — and adds the missing argument.
 | 9 | Tools I build with | Fit-over-familiarity framing; leads with custom Next.js builds, includes GEO / structured data / llms.txt |
 | 10 | Digital back office | Illustrative system concept |
 | 11 | Automation development | Illustrative system concept |
-| 12–14 | Case studies | American Puppy, Cat Grooming Directory, Hold My Letter — real browser-framed screenshots |
+| 12–14 | Case studies | American Puppy (framed as your own brick-and-mortar salon), Cat Grooming Directory, Hold My Letter — real browser-framed screenshots |
 | 15 | Newtown Men's Club | Self-serve case study: the committee adds its own events and members |
 | 16 | More live work | Moontuck, Cautellus, The Digital Back Office |
 | 17 | Three ways to work together | Audit / Build Sprint / Systems Partner, framed as selective |
@@ -123,6 +123,16 @@ prospects they will need you less. That is the right trade — it's the stronges
 trust signal in the deck and it directly answers the "am I locked in?" objection on
 slide 16 — but price the Systems Partner tier on new work and monitoring, not on
 being the only person who can add an event.
+
+### The brick-and-mortar card
+
+Per your note, the deck now says American Puppy is your own salon, not a client
+project — on its case slide ("My own brick-and-mortar") and as a differentiator card
+on What I do. This is the claim almost no competing AI consultant can make: you run
+a physical business and these systems run it. It traded places with the "time back,
+not tool count" card, whose message still lives in the cover lede and audit slide.
+Only keep this framing if American Puppy genuinely is your business — it's also the
+easiest claim on the profile for a St. Charles local to verify in person.
 
 ### Positioning upmarket
 
